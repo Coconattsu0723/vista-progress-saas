@@ -2234,6 +2234,21 @@
   display: block;
   width: 100%;
   height: auto;
+  object-fit: contain;
+}
+
+.feature-preview__image--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .feature-preview__image--desktop {
+    display: block;
+  }
+
+  .feature-preview__image--mobile {
+    display: none;
+  }
 }
 
 .features-section__cta-row {
