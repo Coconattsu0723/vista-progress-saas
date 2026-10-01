@@ -20,6 +20,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="05_Assets/icons/web/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="05_Assets/icons/web/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="05_Assets/icons/web/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/base.css">
@@ -64,8 +67,15 @@
   <main id="main-content">
     <section class="top-hero" id="hero" aria-labelledby="hero-title">
       <div class="top-hero__network" aria-hidden="true">
-        <img class="top-hero__network-image top-hero__network-image--desktop" src="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_DESKTOP.png" alt="" width="1440" height="864">
-        <img class="top-hero__network-image top-hero__network-image--mobile" src="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_MOBILE.png" alt="" width="375" height="634">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_DESKTOP.png">
+          <source media="(min-width: 950px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_1000.png">
+          <source media="(min-width: 834px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_900.png">
+          <source media="(min-width: 684px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_768.png">
+          <source media="(min-width: 515px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_600.png">
+          <source media="(min-width: 400px)" srcset="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_430.png">
+          <img class="top-hero__network-image" src="05_Assets/images/hero/VISTA_BG_HERO_NETWORK_MOBILE.png" alt="" width="375" height="634">
+        </picture>
       </div>
       <div class="container top-hero__container">
         <div class="top-hero__content">
@@ -89,7 +99,7 @@
           </div>
         </div>
         <div class="top-hero__visual">
-          <img class="top-hero__mockup" src="05_Assets/images/hero/VISTA_HERO_PRODUCT_MOCKUP.png" alt="VISTAの進捗可視化画面" width="3840" height="2400">
+          <img class="top-hero__mockup" src="05_Assets/images/hero/VISTA_HERO_PRODUCT_MOCKUP.png" srcset="05_Assets/images/hero/VISTA_HERO_PRODUCT_MOCKUP_800.png 800w, 05_Assets/images/hero/VISTA_HERO_PRODUCT_MOCKUP_1280.png 1280w" sizes="(min-width: 1232px) 640px, (min-width: 1024px) calc(53.333vw - 17.067px), (min-width: 672px) 640px, calc(100vw - 32px)" alt="VISTAの進捗可視化画面" width="3840" height="2400">
         </div>
       </div>
     </section>
@@ -216,14 +226,18 @@
               </ul>
             </div>
             <figure class="feature-preview">
-              <img class="feature-preview__image feature-preview__image--desktop" src="05_Assets/images/product-ui/VISTA_UI_WAITING_INBOX.png" alt="Waiting Inboxの画面プレビュー" width="2880" height="1376">
-              <img class="feature-preview__image feature-preview__image--mobile" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_WAITING_INBOX_PREVIEW.png" alt="Waiting Inboxの画面プレビュー" width="720" height="688">
+              <picture>
+                <source media="(min-width: 768px)" srcset="05_Assets/images/product-ui/VISTA_UI_WAITING_INBOX_1440.png">
+                <img class="feature-preview__image" loading="lazy" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_WAITING_INBOX_PREVIEW.png" alt="Waiting Inboxの画面プレビュー" width="720" height="688">
+              </picture>
             </figure>
           </article>
           <article class="feature-block feature-block--reverse">
             <figure class="feature-preview">
-              <img class="feature-preview__image feature-preview__image--desktop" src="05_Assets/images/product-ui/VISTA_UI_RISK_REPORT.png" alt="Risk Reportの画面プレビュー" width="2880" height="1376">
-              <img class="feature-preview__image feature-preview__image--mobile" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_RISK_REPORT_PREVIEW.png" alt="Risk Reportの画面プレビュー" width="720" height="688">
+              <picture>
+                <source media="(min-width: 768px)" srcset="05_Assets/images/product-ui/VISTA_UI_RISK_REPORT_1440.png">
+                <img class="feature-preview__image" loading="lazy" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_RISK_REPORT_PREVIEW.png" alt="Risk Reportの画面プレビュー" width="720" height="688">
+              </picture>
             </figure>
             <div class="feature-copy">
               <p class="feature-copy__label">FEATURE 02</p>
@@ -250,8 +264,10 @@
               </ul>
             </div>
             <figure class="feature-preview">
-              <img class="feature-preview__image feature-preview__image--desktop" src="05_Assets/images/product-ui/VISTA_UI_FLOW_ANALYTICS.png" alt="Flow Analyticsの画面プレビュー" width="2880" height="1376">
-              <img class="feature-preview__image feature-preview__image--mobile" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_FLOW_ANALYTICS_PREVIEW.png" alt="Flow Analyticsの画面プレビュー" width="720" height="688">
+              <picture>
+                <source media="(min-width: 768px)" srcset="05_Assets/images/product-ui/VISTA_UI_FLOW_ANALYTICS.png">
+                <img class="feature-preview__image" loading="lazy" src="05_Assets/images/product-ui/mobile-preview/VISTA_UI_FLOW_ANALYTICS_PREVIEW.png" alt="Flow Analyticsの画面プレビュー" width="720" height="688">
+              </picture>
             </figure>
           </article>
         </div>
@@ -273,7 +289,7 @@
           <article class="case-study-card">
             <h3 class="sr-only">NALU Inc. 採用サイト制作</h3>
             <div class="case-study-card__cover">
-              <img class="case-study-card__image" src="05_Assets/images/case-studies/VISTA_CASE_RECRUIT_SITE.png" alt="NALU Inc. 採用サイト制作の導入事例" width="2880" height="1920">
+              <img class="case-study-card__image" loading="lazy" src="05_Assets/images/case-studies/VISTA_CASE_RECRUIT_SITE_1296.png" alt="NALU Inc. 採用サイト制作の導入事例" width="1296" height="864">
             </div>
             <div class="case-study-card__body">
               <span class="case-study-card__category"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>Web制作</span>
@@ -283,7 +299,7 @@
           <article class="case-study-card">
             <h3 class="sr-only">ASTERIA FOODS ECサイトリニューアル</h3>
             <div class="case-study-card__cover">
-              <img class="case-study-card__image" src="05_Assets/images/case-studies/VISTA_CASE_EC_RENEWAL.png" alt="ASTERIA FOODS ECサイトリニューアルの導入事例" width="2880" height="1920">
+              <img class="case-study-card__image" loading="lazy" src="05_Assets/images/case-studies/VISTA_CASE_EC_RENEWAL_1296.png" alt="ASTERIA FOODS ECサイトリニューアルの導入事例" width="1296" height="864">
             </div>
             <div class="case-study-card__body">
               <span class="case-study-card__category"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>EC制作</span>
@@ -293,7 +309,7 @@
           <article class="case-study-card">
             <h3 class="sr-only">KINARI ブランドLP制作</h3>
             <div class="case-study-card__cover">
-              <img class="case-study-card__image" src="05_Assets/images/case-studies/VISTA_CASE_BRAND_LP.png" alt="KINARI ブランドLP制作の導入事例" width="2880" height="1920">
+              <img class="case-study-card__image" loading="lazy" src="05_Assets/images/case-studies/VISTA_CASE_BRAND_LP_1296.png" alt="KINARI ブランドLP制作の導入事例" width="1296" height="864">
             </div>
             <div class="case-study-card__body">
               <span class="case-study-card__category"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>ブランド制作</span>
@@ -388,8 +404,10 @@
     </section>
     <section class="final-cta" id="final-cta" aria-labelledby="final-cta-title">
       <div class="final-cta__network" aria-hidden="true">
-        <img class="final-cta__network-image final-cta__network-image--desktop" src="./05_Assets/images/final-cta/VISTA_BG_FINAL_CTA_DESKTOP.png" alt="">
-        <img class="final-cta__network-image final-cta__network-image--mobile" src="./05_Assets/images/final-cta/VISTA_BG_FINAL_CTA_MOBILE.png" alt="">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./05_Assets/images/final-cta/VISTA_BG_FINAL_CTA_DESKTOP.png">
+          <img class="final-cta__network-image" loading="lazy" src="./05_Assets/images/final-cta/VISTA_BG_FINAL_CTA_MOBILE.png" alt="">
+        </picture>
       </div>
       <div class="container final-cta__inner">
         <div class="final-cta__copy">

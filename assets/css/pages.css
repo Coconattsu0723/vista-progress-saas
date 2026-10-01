@@ -1625,65 +1625,29 @@
   pointer-events: none;
 }
 
+.top-hero__network picture {
+  display: contents;
+}
+
 .top-hero__network-image {
   position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   display: block;
+  width: min(375px, 100%);
+  height: 634px;
   max-width: none;
+  object-fit: contain;
+  object-position: left top;
   pointer-events: none;
 }
 
-.top-hero__network-image--desktop {
-  display: none;
-}
-
-.top-hero__network-image--mobile {
-  inset-block-start: 0;
-  inset-inline-start: 0;
-  width: min(375px, 100%);
-  height: 634px;
-  object-fit: contain;
-  object-position: left top;
-}
-
 @media (min-width: 400px) and (max-width: 1023px) {
-  .top-hero__network {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  }
-
-  .top-hero__network-image--mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 514px) {
-  .top-hero__network {
-    background-image: url("../../05_Assets/images/hero/VISTA_BG_HERO_NETWORK_430.png");
-  }
-}
-
-@media (min-width: 515px) and (max-width: 683px) {
-  .top-hero__network {
-    background-image: url("../../05_Assets/images/hero/VISTA_BG_HERO_NETWORK_600.png");
-  }
-}
-
-@media (min-width: 684px) and (max-width: 833px) {
-  .top-hero__network {
-    background-image: url("../../05_Assets/images/hero/VISTA_BG_HERO_NETWORK_768.png");
-  }
-}
-
-@media (min-width: 834px) and (max-width: 949px) {
-  .top-hero__network {
-    background-image: url("../../05_Assets/images/hero/VISTA_BG_HERO_NETWORK_900.png");
-  }
-}
-
-@media (min-width: 950px) and (max-width: 1023px) {
-  .top-hero__network {
-    background-image: url("../../05_Assets/images/hero/VISTA_BG_HERO_NETWORK_1000.png");
+  .top-hero__network-image {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center top;
   }
 }
 
@@ -2237,20 +2201,6 @@
   object-fit: contain;
 }
 
-.feature-preview__image--desktop {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .feature-preview__image--desktop {
-    display: block;
-  }
-
-  .feature-preview__image--mobile {
-    display: none;
-  }
-}
-
 .features-section__cta-row {
   display: flex;
 }
@@ -2783,6 +2733,10 @@
   pointer-events: none;
 }
 
+.final-cta__network picture {
+  display: contents;
+}
+
 .final-cta__network-image {
   display: block;
   width: 100%;
@@ -2790,10 +2744,6 @@
   object-fit: contain;
   object-position: center;
   pointer-events: none;
-}
-
-.final-cta__network-image--desktop {
-  display: none;
 }
 
 .final-cta__inner {
@@ -2901,17 +2851,11 @@
     padding-block: var(--space-80) var(--space-96);
   }
 
-  .top-hero__network-image--mobile {
-    display: none;
-  }
-
-  .top-hero__network-image--desktop {
-    position: absolute;
+  .top-hero__network-image {
     inset: 0;
-    display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-position: center;
   }
 
   .top-hero__container {
@@ -3353,14 +3297,6 @@
   .final-cta {
     min-height: 47rem;
     padding-block: var(--space-96);
-  }
-
-  .final-cta__network-image--desktop {
-    display: block;
-  }
-
-  .final-cta__network-image--mobile {
-    display: none;
   }
 
   .final-cta__inner {
