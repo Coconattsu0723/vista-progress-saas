@@ -45,7 +45,7 @@ TOP、FEATURES、CASE STUDIES、PRICING、CONTACT / DEMOの5ページと、管�
 
 ## Concept
 
-中心価値は、**「確認待ちや停滞を見つける」**です。
+中心価値は「**確認待ちや停滞を見つける**」です。
 
 Hero Copyは、その価値を利用者側の変化として表現しました。
 
