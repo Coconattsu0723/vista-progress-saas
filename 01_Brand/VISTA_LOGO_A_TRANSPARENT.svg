@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 440 150" role="img" aria-labelledby="title desc">
+  <title id="title">VISTA primary logo — Viewfinder direction A</title>
+  <desc id="desc">A blue viewfinder enclosing a charcoal V with a yellow focus point, followed by the VISTA wordmark.</desc>
+  <g transform="translate(5 5)">
+    <path d="M10 38V10H38 M102 10H130V38 M10 102V130H38 M102 130H130V102"
+      fill="none" stroke="#2563EB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42 48L70 108L98 48"
+      fill="none" stroke="#182230" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="70" cy="79" r="5" fill="#F59E0B"/>
+  </g>
+  <text x="178" y="101"
+    font-family="Inter, Arial, sans-serif"
+    font-size="72"
+    font-weight="760"
+    letter-spacing="9"
+    fill="#182230">VISTA</text>
+</svg>

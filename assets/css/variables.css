@@ -1,0 +1,125 @@
+:root {
+  color-scheme: light;
+
+  --color-canvas: #f6f8fb;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f1f4f8;
+  --color-surface-inverse: #111827;
+  --color-brand-deep: #0f1f3d;
+  --color-text-primary: #111827;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+  --color-border: #dce3ec;
+  --color-border-strong: #b7c2d0;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-active: #1e40af;
+  --color-accent-soft: #eff6ff;
+  --color-moving: #166534;
+  --color-moving-soft: #f0fdf4;
+  --color-waiting: #92400e;
+  --color-waiting-soft: #fffbeb;
+  --status-waiting-soft: #fff7ed;
+  --color-risk: #b91c1c;
+  --color-risk-soft: #fef2f2;
+  --status-risk-soft: #fef2f2;
+  --color-focus: #60a5fa;
+  --color-transparent: #00000000;
+
+  --font-ja: "Noto Sans JP", sans-serif;
+  --font-latin: "Inter", sans-serif;
+  --font-size-11: 0.6875rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-30: 1.875rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-44: 2.75rem;
+  --font-size-48: 3rem;
+  --font-size-display-desktop: 3.5rem;
+  --line-height-display: 1.18;
+  --line-height-heading: 1.35;
+  --line-height-body: 1.8;
+
+  --space-0: 0;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-pill: 999px;
+
+  --stroke-1: 1px;
+  --stroke-focus: 2px;
+  --opacity-disabled: 0.4;
+
+  --height-header: 5rem;
+  --height-header-mobile: 4rem;
+  --height-button-large: 3.5rem;
+  --height-button-medium: 3rem;
+  --height-button-small: 2.5rem;
+  --height-badge: 1.75rem;
+  --control-sm: 2rem;
+  --control-md: 2.5rem;
+  --control-lg: 3rem;
+  --icon-sm: 1rem;
+  --icon-md: 1.25rem;
+
+  --width-main-container: 75rem;
+  --width-header-container: 82rem;
+  --width-description: 40rem;
+  --width-hero-content: 30rem;
+  --width-hero-visual: 40rem;
+
+  --breakpoint-mobile-sm: 375px;
+  --breakpoint-mobile: 390px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop-sm: 1024px;
+  --breakpoint-desktop: 1366px;
+  --breakpoint-desktop-lg: 1440px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: #0b0f17;
+  --color-surface: #121824;
+  --color-surface-subtle: #192231;
+  --color-surface-inverse: #f8fafc;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #0b0f17;
+  --color-border: #2b3748;
+  --color-border-strong: #526178;
+  --color-accent: #60a5fa;
+  --color-accent-hover: #93c5fd;
+  --color-accent-active: #3b82f6;
+  --color-accent-soft: #172554;
+  --color-moving: #86efac;
+  --color-moving-soft: #052e16;
+  --color-waiting: #fcd34d;
+  --color-waiting-soft: #451a03;
+  --status-waiting-soft: #78350f;
+  --color-risk: #fca5a5;
+  --color-risk-soft: #450a0a;
+  --status-risk-soft: #7f1d1d;
+  --color-focus: #93c5fd;
+}
