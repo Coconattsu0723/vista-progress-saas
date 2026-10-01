@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coconattsu0723.github.io/vista-progress-saas/sitemap.xml
