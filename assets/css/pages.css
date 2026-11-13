@@ -762,6 +762,11 @@
 
 .case-studies-heading {
   margin-block-end: var(--space-40);
+  text-align: center;
+}
+
+.case-studies-heading .page-title {
+  margin-inline: auto;
 }
 
 .case-detail {
