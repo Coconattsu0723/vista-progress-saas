@@ -770,8 +770,8 @@
   background: var(--color-surface);
 }
 
-.case-detail--subtle {
-  background: var(--color-surface-subtle);
+.case-detail--tinted {
+  background: var(--color-accent-soft);
 }
 
 .case-detail__inner,
@@ -2019,7 +2019,7 @@
 }
 
 .pricing-section--page {
-  background: var(--color-surface);
+  background: var(--color-accent-soft);
 }
 
 .pricing-section--page .pricing-section__heading .section-heading__content {
@@ -2219,7 +2219,7 @@
 
 .pricing-comparison {
   padding-block: var(--space-64);
-  background: var(--color-surface-subtle);
+  background: var(--color-surface);
 }
 
 .pricing-comparison__inner,
