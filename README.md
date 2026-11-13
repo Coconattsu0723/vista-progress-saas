@@ -2,6 +2,8 @@
 
 制作会社の進捗・確認待ち・停滞リスクをひとつの視界にまとめる、架空BtoB SaaSのマルチページサイトです。企画からブランド、UI、Webデザイン、実装、公開までを一貫して制作したポートフォリオ作品です。
 
+![VISTAのOGP画像](05_Assets/images/ogp/VISTA_OGP_DEFAULT.png)
+
 ## Live Demo
 
 - [Live Demo](https://coconattsu0723.github.io/vista-progress-saas/)
