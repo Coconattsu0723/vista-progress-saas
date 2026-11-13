@@ -1760,37 +1760,62 @@
 
 .top-hero__results {
   order: 4;
-  padding: var(--space-16);
-  border: var(--stroke-1) solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background: var(--color-surface);
+  padding-block: var(--space-16);
   text-align: center;
 }
 
 .top-hero__results-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: stretch;
-  list-style: none;
-}
-
-.top-hero__results-list li + li {
-  border-inline-start: var(--stroke-1) solid var(--color-border);
+  gap: var(--space-16);
 }
 
 .top-hero__results-list a {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-content: center;
+  align-items: center;
+  column-gap: var(--space-8);
+  row-gap: var(--space-4);
+  max-width: 18rem;
   height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--space-8);
-  padding-inline: var(--space-8);
+  margin-inline: auto;
   font-size: var(--font-size-14);
   font-weight: 600;
 }
 
+.top-hero__results-list a::before,
+.top-hero__results-list a::after {
+  content: "";
+  grid-row: 1 / -1;
+  width: clamp(1.25rem, 3.5vw, 2.75rem);
+  aspect-ratio: 1 / 2;
+  background: var(--color-accent);
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2044%2088%22%3E%0A%3Cpath%20d%3D%22M42%2085C5%2078%201%2039%2022%2013%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%2F%3E%0A%3Cpath%20d%3D%22M20%2017Q20%207%2032%202Q31%2012%2020%2017ZM15%2027Q5%2020%2012%2010Q18%2016%2015%2027ZM15%2028Q22%2016%2032%2019Q28%2027%2015%2028ZM10%2040Q0%2033%204%2022Q11%2027%2010%2040ZM10%2041Q15%2029%2025%2031Q23%2040%2010%2041ZM10%2053Q0%2049%200%2037Q9%2040%2010%2053ZM11%2054Q12%2042%2022%2041Q23%2049%2011%2054ZM15%2065Q3%2064%201%2052Q10%2053%2015%2065ZM16%2066Q13%2055%2023%2051Q27%2060%2016%2066ZM24%2075Q12%2079%206%2068Q16%2066%2024%2075ZM25%2076Q18%2067%2026%2061Q33%2068%2025%2076ZM34%2082Q24%2089%2015%2082Q22%2075%2034%2082ZM35%2083Q26%2076%2032%2068Q41%2075%2035%2083Z%22%2F%3E%0A%3C%2Fsvg%3E") center / contain no-repeat;
+}
+
+.top-hero__results-list a::before {
+  grid-column: 1;
+}
+
+.top-hero__results-list a::after {
+  grid-column: 3;
+  transform: scaleX(-1);
+}
+
+@media (min-width: 640px) {
+  .top-hero__results-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .top-hero__results-list a:hover {
   text-decoration: underline;
+}
+
+.top-hero__results-list span,
+.top-hero__results-list strong {
+  grid-column: 2;
 }
 
 .top-hero__results-list strong {
@@ -2099,30 +2124,21 @@
 
 .features-section__inner {
   display: grid;
-  gap: var(--space-64);
+  gap: var(--space-32);
 }
 
-.features-section__heading .section-heading__content {
-  gap: var(--space-16);
-}
-
-.features-section__heading .section-title {
+.features-section__title {
   font-size: var(--font-size-32);
+  text-align: center;
 }
 
-.features-section__heading .section-description {
-  font-size: var(--font-size-14);
-}
-
-.features-section__desktop-copy,
-.features-section__desktop-break,
 .feature-copy__desktop-text {
   display: none;
 }
 
 .feature-list {
   display: grid;
-  gap: var(--space-80);
+  gap: var(--space-40);
 }
 
 .feature-block {
@@ -2814,6 +2830,16 @@
   text-align: center;
 }
 
+[data-page="top"] .final-cta {
+  min-height: 0;
+  padding-block: var(--space-40);
+}
+
+[data-page="top"] .final-cta__inner {
+  min-height: 0;
+  padding-block: 0;
+}
+
 .final-cta__copy {
   display: grid;
   width: 100%;
@@ -3109,33 +3135,14 @@
     width: 12.25rem;
   }
 
-  .features-section {
-    padding-block: var(--space-96);
-  }
-
   .features-section__inner {
-    gap: var(--space-64);
+    gap: var(--space-40);
   }
 
-  .features-section__heading {
-    max-width: 52.5rem;
-  }
-
-  .features-section__heading .section-heading__content {
-    gap: var(--space-20);
-  }
-
-  .features-section__heading .section-title {
+  .features-section__title {
     font-size: var(--font-size-40);
   }
 
-  .features-section__heading .section-description {
-    max-width: 47.5rem;
-    font-size: var(--font-size-16);
-  }
-
-  .features-section__desktop-copy,
-  .features-section__desktop-break,
   .feature-copy__desktop-text {
     display: inline;
   }
@@ -3145,12 +3152,11 @@
   }
 
   .feature-list {
-    gap: var(--space-96);
+    gap: var(--space-48);
   }
 
   .feature-block {
     grid-template-columns: minmax(0, 11fr) minmax(0, 18fr);
-    min-height: 43rem;
     gap: var(--space-40);
     align-items: center;
   }
@@ -3366,6 +3372,10 @@
     min-height: 35rem;
     gap: var(--space-32);
     padding: var(--space-80);
+  }
+
+  [data-page="top"] .final-cta {
+    padding-block: var(--space-64);
   }
 
   .final-cta__copy {
